@@ -57,9 +57,12 @@
       font-size: 31px;
       margin: 4px 12px 0 12px;
     }
-    img {
+    .img-container {
       width: 96%;
       max-width: 740px;
+    }
+    img {
+      width: 100%;
     }
     /*.actes {
       margin: 20px 20px 30px 20px;
@@ -103,7 +106,10 @@
       <span>Escola Argentona</span>
       <span>Entrada gratuïta</span>
     </div>
-    <img src="cartell-garrinada-2019.jpg" alt="Cartell Garrinada 2019">
+    <!-- The container is required to avoid the img stretching vertically and not keeping aspect ratio -->
+    <div class="img-container">
+      <img src="cartell-garrinada-2019.jpg" alt="Cartell Garrinada 2019">
+    </div>
     <!--<div class="actes">
       <div>
         <h2 class="acte">Busta & DJ Can & Adrià</h2>
