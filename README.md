@@ -8,5 +8,6 @@ Contents:
 * Web Garrinada 2018
 * Web Garrivern 2019
 * Web Garrinada 2019
+* Web Garrivern 2020
 
 The website is hosted in Firebase. To deploy run `firebase deploy`.
