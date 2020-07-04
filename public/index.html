@@ -21,6 +21,12 @@
   <meta name="twitter:site" content="@lagarrinada" />
 
 <style>
+    /* Reset */
+    html, body, h1, h2, h3, p, div, a, img, article, section {
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Amatic SC', cursive;
       background: radial-gradient(ellipse at center, #ff3357 72%, #cd0024 100%);
@@ -37,50 +43,50 @@
       text-align: center;
     }
     .titol {
-      font-size: 52px;
-      margin-top: 20px;
-      margin-bottom: 4px;
+      font-size: 40px;
+      margin: 30px 8px 4px;
+    }
+    @media all and (min-width: 480px) {
+      .titol {
+        font-size: 52px;
+      }
     }
     .subtitol {
-      font-size: 42px;
-      margin: 0 16px 6px;
+      font-size: 34px;
+      margin: 16px 16px -12px;
     }
-    .row-wrap {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+    @media all and (min-width: 480px) {
+      .subtitol {
+        font-size: 42px;
+      }
     }
-    .main-info {
-      margin-bottom: 24px;
+    .comunicat {
+      font-size: 22px;
+      margin: 32px 16px 0;
+      max-width: 700px;
+      font-family: serif;
+      line-height: 1.4;
     }
-    .main-info span {
-      font-size: 31px;
-      margin: 4px 12px 0 12px;
+    @media all and (min-width: 480px) {
+      .comunicat {
+        font-size: 26px;
+      }
     }
-    .img-container {
-      width: 96%;
-      max-width: 760px;
+    .cara {
+      font-size: 48px;
+      margin-top: 16px;
     }
-    img {
-      width: 100%;
+    @media all and (min-width: 480px) {
+      .cara {
+        font-size: 56px;
+      }
     }
-    /*.actes {
-      margin: 20px 20px 30px 20px;
-      max-width: 900px;
-    }
-    .acte {
-      font-size: 36px;
-      margin: 17px 20px 0 20px;
-    }
-    .acte-descripcio {
-      font-size: 28px;
-      margin: 0 20px;
-    }*/
+
     footer {
       display: flex;
       justify-content: center;
       padding-top: 30px;
-      padding-bottom: 30px;
+      padding-bottom: 40px;
     }
     footer .social-icon {
       margin: 0 20px;
@@ -96,39 +102,14 @@
 </head>
 <body>
   <main>
-    <h1 class="titol">Garrivern 2020</h1>
-    <div class="row-wrap">
-      <h2 class="subtitol">Argentona</h2>
-      <h2 class="subtitol">10 de gener</h2>
-      <h2 class="subtitol">Festa Major de Sant Julià</h2>
-    </div>
-    <div class="row-wrap main-info">
-      <span>Carpa a Can Doro</span>
-      <span>Entrada gratuïta</span>
-    </div>
-    <!-- The container is required to avoid the img stretching vertically and not keeping aspect ratio -->
-    <div class="img-container">
-      <img src="cartell-garrivern-2020.jpg" alt="Cartell Garrivern 2020">
-    </div>
-    <!--<div class="actes">
-      <div>
-        <h2 class="acte">Busta & DJ Can & Adrià</h2>
-      </div>
-      <div>
-        <h2 class="acte">Simbiosi</h2>
-        <p class="acte-descripcio">Reggae-Fusió. Guanyadors del concurs de música jove del Maresme</p>
-      </div>
-      <div>
-        <h2 class="acte">Senyor Oca</h2>
-        <p class="acte-descripcio">Hip-hop, Drum'n'Bass</p>
-      </div>
-      <div>
-        <h2 class="acte">PD Badabronx</h2>
-        <p class="acte-descripcio">International Patxanga. Resident Sala 2 del Clap</p>
-      </div>
-    </div>-->
+    <h1 class="titol">Se suspèn la Garrinada 2020</h1>
+    <h2 class="subtitol">Comunicat</h2>
+    <p class="comunicat">L'Ajuntament d'Argentona i l’Associació La Garrinada anunciem la suspensió de l’edició d’enguany. Els membres de l’assemblea, d’acord amb l’Ajuntament, hem pres la decisió per prudència i responsabilitat i amb l’objectiu de fer-la l’any vinent amb normalitat.</p>
+    <p class="comunicat">Per tal de compensar l’absència de La Garrinada, la programació de Festa Major inclourà enguany un cicle de quatre concerts per als joves d’Argentona el 4, 5 i 6 d’agost al pati de l’escola Les Fonts. Seran
+      espectacles musicals a preus assequibles i amb aforament limitat organitzats pels membres de La Garrinada.</p>
+    <p class="comunicat">Agraïm la vostra comprensió i esperem veure’ns a l’agost!</p>
+    <p class="cara">🐽</p>
   </main>
-
   <footer>
     <a href="https://twitter.com/lagarrinada"><svg class="social-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg></a>
     <a href="https://www.facebook.com/garrinada"><svg class="social-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0"/></svg></a>
