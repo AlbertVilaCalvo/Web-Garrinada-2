@@ -91,6 +91,10 @@
     img {
       width: 100%;
     }
+    .faqs-title {
+      font-size: 42px;
+      margin: 44px 16px 0;
+    }
     .pregunta {
       max-width: 700px;
       margin: 28px 16px 0;
@@ -99,10 +103,22 @@
     .resposta {
       max-width: 700px;
       margin: 10px 16px 0;
-      font-size: 26px;
+      font-size: 22px;
       font-family: serif;
       line-height: 1.4;
     }
+    @media all and (min-width: 480px) {
+      .faqs-title {
+        font-size: 46px;
+      }
+      .pregunta {
+        font-size: 36px;
+      }
+      .resposta {
+        font-size: 26px;
+      }
+    }
+
 
     footer {
       display: flex;
@@ -137,7 +153,7 @@
       <img src="2020_porca_miseria_cartell.jpg" alt="Cartell Porca Misèria 2020">
     </div>
 
-    <h3 class="subtitol">FAQS Entrades Porca Misèria</h3>
+    <h3 class="faqs-title">FAQS Entrades Porca Misèria</h3>
     <p class="pregunta">Quan i on les puc comprar?</p>
     <p class="resposta">Del 20 de juliol al 2 d'agost a:</p>
     <p class="resposta">Casal de Joves (Carrer Les Parres 25) entre setmana de 18h a 20h</p>
