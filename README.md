@@ -1,14 +1,23 @@
-To wathc files with browsersync do:
+# www.garrinada.cat
+
+## Contents
+
+* Garrivern 2018
+* Garrinada 2018
+* Garrivern 2019
+* Garrinada 2019
+* Garrivern 2020
+* Garrinada 2020 (Porca Misèria)
+* Porca Sibèria Hivern 2021
+
+## Development
+
+To watch files with browsersync do:
 
 `browser-sync start --server 'public' --files 'public'`
 
-Contents:
+## Deployment
 
-* Web Garrivern 2018
-* Web Garrinada 2018
-* Web Garrivern 2019
-* Web Garrinada 2019
-* Web Garrivern 2020
-* Web Garrinada 2020
+The website is hosted at Firebase at https://garrinada-web.firebaseapp.com and https://garrinada-web.web.app.
 
-The website is hosted in Firebase. To deploy run `firebase deploy`.
+To deploy run `firebase deploy`.
