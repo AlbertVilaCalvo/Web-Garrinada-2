@@ -1,0 +1,22 @@
+# Docs: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  publish = "public"
+
+
+# Redirects
+# https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+# https://docs.netlify.com/routing/redirects/redirect-options/
+# https://docs.netlify.com/configure-builds/file-based-configuration/#redirects
+
+[[redirects]]
+  from = "https://garrinada.org/*"
+  to = "https://www.garrinada.cat/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://garrinada.netlify.app/*"
+  to = "https://www.garrinada.cat/:splat"
+  status = 301
+  force = true
