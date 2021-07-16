@@ -19,6 +19,6 @@ To watch files with browsersync do:
 
 ## Deployment
 
-The website is hosted at Firebase at https://garrinada-web.firebaseapp.com and https://garrinada-web.web.app.
+The website is hosted at Netlify at https://garrinada.netlify.app.
 
-To deploy run `firebase deploy`.
+Changes in the `main` branch in GitHub are published automatically.
