@@ -10,6 +10,7 @@
 * Garrinada 2020 (Porca Misèria)
 * Porca Sibèria Hivern 2021
 * Garrinada 2021
+* Garrinada 2022
 
 ## Development
 
