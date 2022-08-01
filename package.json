@@ -1,0 +1,19 @@
+{
+  "name": "garrinada-web",
+  "version": "1.0.0",
+  "description": "Web Garrinada Argentona - www.garrinada.cat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertVilaCalvo/Web-Garrinada.git"
+  },
+  "author": "Albert Vila",
+  "license": "Propietary",
+  "bugs": {
+    "url": "https://github.com/AlbertVilaCalvo/Web-Garrinada/issues"
+  },
+  "homepage": "https://github.com/AlbertVilaCalvo/Web-Garrinada#readme"
+}
