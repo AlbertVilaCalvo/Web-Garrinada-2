@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlbertVilaCalvo/Web-Garrinada/issues"
   },
-  "homepage": "https://github.com/AlbertVilaCalvo/Web-Garrinada#readme"
+  "homepage": "https://github.com/AlbertVilaCalvo/Web-Garrinada#readme",
+  "devDependencies": {
+    "prettier": "2.7.1"
+  }
 }
