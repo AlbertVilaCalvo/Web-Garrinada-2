@@ -2,15 +2,15 @@
 
 ## Contents
 
-* Garrivern 2018
-* Garrinada 2018
-* Garrivern 2019
-* Garrinada 2019
-* Garrivern 2020
-* Garrinada 2020 (Porca Misèria)
-* Porca Sibèria Hivern 2021
-* Garrinada 2021
-* Garrinada 2022
+- Garrivern 2018
+- Garrinada 2018
+- Garrivern 2019
+- Garrinada 2019
+- Garrivern 2020
+- Garrinada 2020 (Porca Misèria)
+- Porca Sibèria Hivern 2021
+- Garrinada 2021
+- Garrinada 2022
 
 ## Development
 
