@@ -8,15 +8,14 @@
 - Garrinada 2019
 - Garrivern 2020
 - Garrinada 2020 (Porca Misèria)
-- Porca Sibèria Hivern 2021
+- Porca Sibèria hivern 2021
 - Garrinada 2021
 - Garrinada 2022
 
 ## Development
 
-To watch files with browsersync do:
-
-`browser-sync start --server 'public' --files 'public'`
+To watch files with browsersync do `browser-sync start --server 'public' --files 'public'`, then open
+http://localhost:3000/.
 
 ## Deployment
 
