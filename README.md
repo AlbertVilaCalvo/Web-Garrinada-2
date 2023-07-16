@@ -11,6 +11,7 @@
 - Porca Sibèria hivern 2021
 - Garrinada 2021
 - Garrinada 2022
+- Garrivern 2023
 
 ## Development
 

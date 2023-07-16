@@ -1,3 +1,8 @@
-.firebase
 node_modules
 .idea
+
+# build output
+dist/
+
+# generated types
+.astro/

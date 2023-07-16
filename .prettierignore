@@ -1,2 +1,4 @@
-.firebase
 public
+.idea
+dist
+.astro

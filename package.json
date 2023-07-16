@@ -1,10 +1,15 @@
 {
-  "name": "garrinada-web",
+  "name": "garrinada-web-2",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Web Garrinada Argentona - www.garrinada.cat",
-  "main": "index.js",
+  "description": "Web Garrinada Argentona v2 (Astro) - www.garrinada.cat",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro check --watch & astro dev",
+    "start": "astro check --watch & astro dev",
+    "build": "astro build",
+    "preview": "rm -rf dist && npm run build && astro preview",
+    "astro": "astro",
+    "check": "astro check && tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -16,7 +21,11 @@
     "url": "https://github.com/AlbertVilaCalvo/Web-Garrinada/issues"
   },
   "homepage": "https://github.com/AlbertVilaCalvo/Web-Garrinada#readme",
+  "dependencies": {
+    "astro": "2.8.3"
+  },
   "devDependencies": {
-    "prettier": "2.7.1"
+    "prettier": "3.0.0",
+    "prettier-plugin-astro": "0.11.0"
   }
 }
