@@ -1,4 +1,8 @@
 public
 .idea
-dist
-.astro
+
+# build output
+dist/
+
+# generated types
+.astro/
