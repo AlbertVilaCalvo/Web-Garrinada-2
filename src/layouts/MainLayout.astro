@@ -34,10 +34,15 @@ const { title } = Astro.props
 
 <style is:global>
   :root {
+    --bg: rgb(6 11 16)
   }
   html {
     font-family: system-ui, sans-serif;
-    background-color: black;
-    color: deeppink;
+    background-color: var(--bg);
+    /* color: deeppink; */
+    color: #fa1372;
+  }
+  body {
+    margin: 0;
   }
 </style>
