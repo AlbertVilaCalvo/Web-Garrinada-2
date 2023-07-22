@@ -9,7 +9,9 @@
     "build": "astro build",
     "preview": "rm -rf dist && npm run build && astro preview",
     "astro": "astro",
-    "check": "astro check && tsc --noEmit"
+    "check": "astro check && tsc --noEmit",
+    "format": "npx prettier --write **/*.astro .",
+    "format:check": "npx prettier --check **/*.astro ."
   },
   "repository": {
     "type": "git",
