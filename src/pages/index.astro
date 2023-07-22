@@ -10,6 +10,11 @@ import MainLayout from '../layouts/MainLayout.astro'
       <p>Festa Major de Sant Domènec</p>
       <p>Escola Argentona (Argentona)</p>
       <p>Entrada gratuïta</p>
+      <img
+        src="/img/cartell-garrinada-2023.jpg"
+        alt="Cartell Garrinada 2023"
+        id="img-cartell"
+      />
     </div>
     <section></section>
   </main>
@@ -59,7 +64,7 @@ import MainLayout from '../layouts/MainLayout.astro'
   main {
     margin: auto;
     padding: 1.5rem;
-    max-width: 60ch;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,6 +82,12 @@ import MainLayout from '../layouts/MainLayout.astro'
   }
   .main-info p {
     margin: 8px 0;
+  }
+  #img-cartell {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1600/2232;
+    margin: 50px 0;
   }
 
   footer {
