@@ -6,8 +6,8 @@ import MainLayout from '../layouts/MainLayout.astro'
   <main>
     <h1>Garrinada 2023</h1>
     <div class="main-info">
-      <p>4, 5 i 6 d'agost</p>
       <p>Festa Major de Sant Domènec</p>
+      <p>4, 5 i 6 d'agost</p>
       <p>Escola Argentona (Argentona)</p>
       <p>Entrada gratuïta</p>
       <img
@@ -63,7 +63,7 @@ import MainLayout from '../layouts/MainLayout.astro'
   }
   main {
     margin: auto;
-    padding: 1.5rem;
+    padding: 1.2rem;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -82,6 +82,10 @@ import MainLayout from '../layouts/MainLayout.astro'
   }
   .main-info p {
     margin: 8px 0;
+    text-align: center;
+  }
+  .main-info p:first-child {
+    font-size: 1.5rem;
   }
   #img-cartell {
     width: 100%;
