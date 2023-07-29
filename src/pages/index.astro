@@ -90,7 +90,7 @@ import MainLayout from '../layouts/MainLayout.astro'
       </div>
     </section>
 
-    <section>
+    <section class="section-no-background">
       <div class="container-max-width">
         <h2>Dissabte 5</h2>
         <div class="responsive-2-columns">
@@ -150,13 +150,7 @@ import MainLayout from '../layouts/MainLayout.astro'
             class="img-square"
             loading="lazy"
           />
-          <img
-            src="/img/2023-garrinada/dj-hochi-square-opt.jpg"
-            alt="DJ Hochi"
-            class="img-square"
-            loading="lazy"
-          />
-          <p>
+          <p class="p-dia5-nit-perfecta">
             La nit no serà gairebé perfecta, sinó perfecta del tot: per
             acabar-la d'arrodonir, els barcelonins <strong
               >HABLA DE MÍ EN PRESENTE</strong
@@ -166,6 +160,12 @@ import MainLayout from '../layouts/MainLayout.astro'
             garrina, resident a la sala Clap, que aquest any torna per posar la
             cirereta del pastís al dissabte més garrí de l'any.
           </p>
+          <img
+            src="/img/2023-garrinada/dj-hochi-square-opt.jpg"
+            alt="DJ Hochi"
+            class="img-square dj-hochi"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
@@ -263,12 +263,10 @@ import MainLayout from '../layouts/MainLayout.astro'
       </div>
     </section>
 
-    <section>
+    <section class="section-no-background">
       <div class="container-max-width">
         <h2>Informació d'interès</h2>
-        <p style="margin-bottom: 40px;">
-          Hi haurà servei de foodtrucks durant tota la nit.
-        </p>
+        <p>Hi haurà servei de foodtrucks durant tota la nit.</p>
       </div>
     </section>
   </main>
@@ -347,12 +345,13 @@ import MainLayout from '../layouts/MainLayout.astro'
     width: 100%;
     height: auto;
     aspect-ratio: 1600 / 2232;
-    margin: 50px 0;
+    margin: 50px 0 0;
   }
 
   .section-with-background {
     width: 100%;
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 5rem;
+    margin-top: 3rem;
     clip-path: polygon(
       0 0,
       100% calc(20px + 100vw * 0.02),
@@ -362,10 +361,13 @@ import MainLayout from '../layouts/MainLayout.astro'
     background: var(--gradient);
     color: var(--black);
   }
+  .section-no-background {
+    padding-top: 5px;
+  }
   .container-max-width {
     margin: auto;
     max-width: var(--max-width);
-    padding: 1.2rem;
+    padding: 0 1.2rem;
   }
   .responsive-2-columns {
     display: grid;
@@ -382,6 +384,19 @@ import MainLayout from '../layouts/MainLayout.astro'
     height: auto;
     aspect-ratio: 1;
   }
+  .dj-hochi {
+    margin-bottom: 12px;
+  }
+  @media all and (min-width: 520px) {
+    .dj-hochi {
+      order: 1;
+      margin-bottom: 0px;
+    }
+    .p-dia5-nit-perfecta {
+      order: 2;
+      margin-bottom: 0;
+    }
+  }
 
   footer {
     clip-path: polygon(0 0, 100% calc(20px + 100vw * 0.02), 100% 100%, 0 100%);
@@ -389,6 +404,7 @@ import MainLayout from '../layouts/MainLayout.astro'
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
     padding-top: 70px;
     padding-bottom: 45px;
   }
