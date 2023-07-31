@@ -278,15 +278,14 @@ import MainLayout from '../layouts/MainLayout.astro'
             <li>
               <a
                 href="https://argentona.cat/ARXIUS/Festes_Cultura/2023/FME/Horari_BUS_nocturn_Festa_Major_Argentona_Cros_Mataro_DEFINITIU.pdf"
-                style="color: var(--pink-mid-gradient)"
+                class="bus-link"
                 >Línia al Cros i Mataró
               </a>
             </li>
             <li>
               <a
                 href="https://argentona.cat/ARXIUS/Festes_Cultura/2023/FME/Horaris_BUS_nocturn_Festa_Major_Argentona_Urbanitzacions_DEFINITIU.pdf"
-                style="color: var(--pink-mid-gradient)"
-                >Línia a les urbanitzacions</a
+                class="bus-link">Línia a les urbanitzacions</a
               >
             </li>
           </ul>
@@ -420,6 +419,11 @@ import MainLayout from '../layouts/MainLayout.astro'
       order: 2;
       margin-bottom: 0;
     }
+  }
+  .bus-link {
+    color: var(--pink-mid-gradient);
+    display: inline-block;
+    padding: 7px 0;
   }
 
   footer {
