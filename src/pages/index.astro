@@ -144,7 +144,7 @@ import MainLayout from '../layouts/MainLayout.astro'
           <img
             src="/img/2023-garrinada/alergicas-al-polen.jpg"
             alt="Al·lèrgiques al pol·len"
-            style="width: 100%; height: auto; aspect-ratio: 1200 / 800; align-self: center;"
+            style="aspect-ratio: 1200 / 800; align-self: center;"
             loading="lazy"
           />
           <img
@@ -201,7 +201,7 @@ import MainLayout from '../layouts/MainLayout.astro'
           <img
             src="/img/2023-garrinada/mitjanit-opt.jpg"
             alt="Mitjanit"
-            style="width: 100%; height: auto; aspect-ratio: 1400 / 1609; align-self: center;"
+            style="aspect-ratio: 1400 / 1609;"
             loading="lazy"
           />
           <div>
@@ -225,7 +225,7 @@ import MainLayout from '../layouts/MainLayout.astro'
           <img
             src="/img/2023-garrinada/kaliza-opt.jpg"
             alt="Kaliza"
-            style="width: 100%; height: auto; aspect-ratio: 1600 / 1067; align-self: center;"
+            style="aspect-ratio: 1600 / 1067; align-self: center;"
             loading="lazy"
           />
           <img
@@ -343,6 +343,13 @@ import MainLayout from '../layouts/MainLayout.astro'
       var(--yellow-orange) 90%
     );
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .img-square {
+    aspect-ratio: 1;
+  }
   h1 {
     font-size: 3rem;
     font-weight: 800;
@@ -365,8 +372,6 @@ import MainLayout from '../layouts/MainLayout.astro'
     margin: 8px 0;
   }
   #img-cartell {
-    width: 100%;
-    height: auto;
     aspect-ratio: 1600 / 2232;
     margin: 50px 0 0;
   }
@@ -401,11 +406,6 @@ import MainLayout from '../layouts/MainLayout.astro'
     .responsive-2-columns {
       grid-template-columns: 1fr 1fr;
     }
-  }
-  .img-square {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
   }
   .dj-hochi {
     margin-bottom: 12px;
