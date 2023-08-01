@@ -13,7 +13,13 @@ import MainLayout from '../layouts/MainLayout.astro'
       <p>Escola Argentona (Argentona)</p>
       <p>Entrada gratuïta</p>
       <img
-        src="/img/cartell-garrinada-2023.jpg"
+        src="/img/cartell-garrinada-2023-800.jpg"
+        srcset="
+          /img/cartell-garrinada-2023-800.jpg 800w,
+          /img/cartell-garrinada-2023-1600.jpg 1600w,
+        "
+        sizes="(max-width: 520px) 50vw,
+               100vw"
         alt="Cartell Garrinada 2023"
         id="img-cartell"
       />
