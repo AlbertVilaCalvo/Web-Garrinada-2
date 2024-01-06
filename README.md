@@ -7,11 +7,13 @@
 - Garrivern 2019
 - Garrinada 2019
 - Garrivern 2020
-- Garrinada 2020 (Porca Misèria)
+- Garrinada 2020 (Porca Misèria, suspesa)
 - Porca Sibèria hivern 2021
 - Garrinada 2021
 - Garrinada 2022
 - Garrivern 2023
+- Garrinada 2023
+- Garrivern 2024
 
 ## Development
 
