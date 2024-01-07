@@ -340,6 +340,8 @@ import MainLayout from '../layouts/MainLayout.astro'
 <style is:global>
   :root {
     --max-width: 800px;
+    --black: rgb(6 11 16);
+    --pink-mid-gradient: #fa1372;
     --pink: hsla(328, 100%, 54%, 1);
     --yellow-orange: hsla(0, 97%, 71%, 1);
     --gradient: linear-gradient(
@@ -347,6 +349,15 @@ import MainLayout from '../layouts/MainLayout.astro'
       var(--pink) 10%,
       var(--yellow-orange) 90%
     );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: var(--black);
+    /* color: deeppink; */
+    color: var(--pink-mid-gradient);
+  }
+  body {
+    margin: 0;
   }
   img {
     width: 100%;

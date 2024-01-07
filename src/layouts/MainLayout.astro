@@ -31,19 +31,3 @@ const { title } = Astro.props
     <slot />
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --black: rgb(6 11 16);
-    --pink-mid-gradient: #fa1372;
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    background-color: var(--black);
-    /* color: deeppink; */
-    color: var(--pink-mid-gradient);
-  }
-  body {
-    margin: 0;
-  }
-</style>
