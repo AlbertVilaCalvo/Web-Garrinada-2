@@ -1,0 +1,89 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Instagram from '../components/icon/Instagram.astro'
+import Twitter from '../components/icon/Twitter.astro'
+import Facebook from '../components/icon/Facebook.astro'
+---
+
+<MainLayout
+  title="Garrinada - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
+>
+  <main>
+    <h1>GARRIVERN 2024</h1>
+    <h2 style="margin-top: 0">Festa Major de Sant Julià</h2>
+    <p style="margin-top: 5px">Divendres 12 de gener</p>
+    <p style="margin: 5px">Pavelló poliesportiu nou</p>
+    <p style="margin-bottom: 50px">Obrim a les 22:30</p>
+    <img
+      src="/img/cartell-garrivern-2024.jpg"
+      alt="Cartell Garrivern 2024"
+      style="aspect-ratio: 1440 / 1800;"
+    />
+  </main>
+  <footer>
+    <div>
+      <Twitter />
+      <Facebook />
+      <Instagram />
+    </div>
+  </footer>
+</MainLayout>
+
+<style is:global>
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  :root {
+    --black: rgb(6 11 16);
+    --primary: #f2ecb2;
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: var(--black);
+    color: var(--primary);
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  footer .social-icon {
+    margin: 0 20px;
+    transition: transform 0.1s ease-in-out;
+    color: var(--primary);
+  }
+  footer .social-icon:hover {
+    transform: scale(1.25);
+  }
+  .social-icon {
+    width: 36px;
+  }
+  @media all and (min-width: 480px) {
+    .social-icon {
+      width: 40px;
+    }
+  }
+</style>
