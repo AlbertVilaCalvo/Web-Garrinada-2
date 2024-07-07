@@ -6,26 +6,19 @@ import Facebook from '../components/icon/Facebook.astro'
 ---
 
 <MainLayout
-  title="Garrinada 2024 - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
+  title="Garrinada - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
 >
   <main>
-    <section class="section-main-info">
-      <h1>GARRINADA 2024</h1>
-      <h2>Festa Major de Sant Domènec</h2>
-      <p>4, 5 i 6 d'agost</p>
-      <p>Escola Argentona</p>
-      <p>Entrada gratuïta</p>
-      <img
-        src="/img/cartell-garrinada-2024-800.jpg"
-        srcset="
-          /img/cartell-garrinada-2024-800.jpg 800w,
-          /img/cartell-garrinada-2024-1200.jpg 1200w,
-          /img/cartell-garrinada-2024-1600.jpg 1600w,
-        "
-        alt="Cartell Garrinada 2024"
-        id="img-cartell"
-      />
-    </section>
+    <h1>GARRIVERN 2024</h1>
+    <h2 style="margin-top: 0">Festa Major de Sant Julià</h2>
+    <p style="margin-top: 5px">Divendres 12 de gener</p>
+    <p style="margin: 5px">Pavelló poliesportiu nou</p>
+    <p style="margin-bottom: 50px">Obrim a les 22:30</p>
+    <img
+      src="/img/cartell-garrivern-2024.jpg"
+      alt="Cartell Garrivern 2024"
+      style="aspect-ratio: 1440 / 1800;"
+    />
   </main>
   <footer>
     <div>
@@ -47,7 +40,7 @@ import Facebook from '../components/icon/Facebook.astro'
   }
   :root {
     --black: rgb(6 11 16);
-    --primary: #ffd0e0;
+    --primary: #f2ecb2;
   }
   html {
     font-family: system-ui, sans-serif;
@@ -68,14 +61,6 @@ import Facebook from '../components/icon/Facebook.astro'
     width: 100%;
     height: auto;
     max-width: 800px;
-  }
-  #img-cartell {
-    aspect-ratio: 1600 / 2263;
-    margin: 30px 0 0;
-  }
-  h1 {
-    font-size: 1.8rem;
-    font-weight: 800;
   }
   footer {
     display: flex;
