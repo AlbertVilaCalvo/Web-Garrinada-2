@@ -12,6 +12,7 @@ export default defineConfig({
     // https://astro.build/blog/astro-260/#css-inlining
     // https://docs.astro.build/en/reference/configuration-reference/#buildinlinestylesheets
     // https://github.com/withastro/roadmap/blob/main/proposals/0036-inline-stylesheets.md
-    inlineStylesheets: "auto",
+    // Note that this is the default value in version 3, see https://docs.astro.build/en/guides/upgrade-to/v3/#changed-default-inlinestylesheets
+    inlineStylesheets: 'auto',
   },
 })

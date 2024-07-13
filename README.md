@@ -17,8 +17,7 @@
 
 ## Development
 
-To watch files with browsersync do `browser-sync start --server 'public' --files 'public'`, then open
-http://localhost:3000/.
+Run `npm run dev`, then open http://localhost:4321/.
 
 ## Deployment
 
