@@ -10,8 +10,8 @@
     "preview": "rm -rf dist && npm run build && astro preview",
     "astro": "astro",
     "check": "astro check && tsc --noEmit",
-    "format": "prettier --write **/*.astro .",
-    "format:check": "prettier --check **/*.astro ."
+    "format": "npx prettier --write .",
+    "format:check": "npx prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.8.1",
-    "prettier": "3.3.2",
+    "prettier": "3.3.3",
     "prettier-plugin-astro": "0.14.0",
     "typescript": "5.5.3"
   }
