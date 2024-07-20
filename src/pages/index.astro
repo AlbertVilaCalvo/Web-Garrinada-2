@@ -120,7 +120,13 @@ import Facebook from '../components/icon/Facebook.astro'
           Band, Sexenni i la punxadiscos Anna Gisbert
         </p>
         <div class="responsive-2-columns">
-          <div>
+          <img
+            src="/img/2024-garrinada/La-Ludwig-Band.jpg"
+            alt="La Ludwig Band"
+            style="aspect-ratio: 700 / 977;"
+            loading="lazy"
+          />
+          <div class="reverse-order">
             <p>
               <strong>Les Que Faltaband</strong> ens posaran a ballar amb les seves
               versions tan bon punt comenci la segona nit de concerts.
@@ -143,12 +149,6 @@ import Facebook from '../components/icon/Facebook.astro'
               punxadiscos <strong>Anna Gisbert</strong>.
             </p>
           </div>
-          <img
-            src="/img/2024-garrinada/La-Ludwig-Band.jpg"
-            alt="La Ludwig Band"
-            style="aspect-ratio: 700 / 977;"
-            loading="lazy"
-          />
         </div>
       </div>
     </section>
@@ -291,6 +291,9 @@ import Facebook from '../components/icon/Facebook.astro'
       grid-template-columns: 1fr 1fr;
       gap: 30px;
       align-items: center;
+    }
+    .reverse-order {
+      order: -1;
     }
   }
 
