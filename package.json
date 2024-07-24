@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/AlbertVilaCalvo/Web-Garrinada#readme",
   "dependencies": {
-    "astro": "4.11.5"
+    "astro": "4.12.2"
   },
   "devDependencies": {
-    "@astrojs/check": "0.8.1",
+    "@astrojs/check": "0.8.2",
     "prettier": "3.3.3",
-    "prettier-plugin-astro": "0.14.0",
-    "typescript": "5.5.3"
+    "prettier-plugin-astro": "0.14.1",
+    "typescript": "5.5.4"
   }
 }
