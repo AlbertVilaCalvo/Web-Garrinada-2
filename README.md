@@ -25,3 +25,9 @@ Run `npm run dev`, then open http://localhost:4321/.
 The website is hosted at Netlify at https://garrinada.netlify.app.
 
 Changes in the `main` branch in GitHub are published automatically.
+
+## Git pre-commit hook to run Prettier, Astro check and TypeScript
+
+To run Prettier, Astro check and TypeScript checks on every commit, run `cp pre-commit .git/hooks`.
+
+Note that the checks do not abort the commit, they only inform you of any issues found.
