@@ -6,28 +6,50 @@ import Facebook from '../components/icon/Facebook.astro'
 ---
 
 <MainLayout
-  title="Garrinada 2025 - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
+  title="Garrinada - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
 >
   <main>
     <section>
-      <h1>Garrinada 2025</h1>
-      <h2>Festa Major de Sant Domènec</h2>
+      <h1>GARRIVERN 2025</h1>
+      <h2>Festa Major de Sant Julià</h2>
       <div class="row" style="padding-top: 3px">
-        <p style="margin-top: 3px">Argentona</p>
-        <p style="margin-top: 3px">4, 5 i 6 d'agost</p>
+        <p style="margin-top: 3px">La Sala, Argentona</p>
+        <p style="margin-top: 3px">10 de gener</p>
         <p style="margin-top: 3px">Entrada gratuïta</p>
       </div>
       <img
-        src="/img/cartell-garrinada-2025-800.jpg"
-        srcset="
-          /img/cartell-garrinada-2025-800.jpg 800w,
-          /img/cartell-garrinada-2025-1200.jpg 1200w,
-          /img/cartell-garrinada-2025-1600.jpg 1600w
-        "
-        sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
-        alt="Cartell Garrinada 2025"
+        src="/img/cartell-garrivern-2025.jpg"
+        alt="Cartell Garrivern 2025"
         id="img-cartell"
       />
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <p>
+          A partir de les 22:30 l'argentonina <a
+            href="https://www.instagram.com/laia.prat/">Laia Prat</a
+          >, que trepitja fort amb el seu projecte musical ELAPE, serà
+          l'encarregada d'inaugurar una nova edició del Garrivern.
+        </p>
+        <p>
+          Passada la mitjanit, <a href="https://www.instagram.com/ypnosi_/"
+            >Ypnosi</a
+          > ens sorprendrà amb les seves performances d'avantguarda i el seu rock
+          tenyit de psicofunk i new wave.
+        </p>
+        <p>
+          Tot seguit, continuarem ballant i cantant amb les versions de <a
+            href="https://www.instagram.com/broumusical/">Brou</a
+          >, un fenomen a les xarxes socials que promet molta diversió.
+        </p>
+        <p>
+          Per acabar, la <a href="https://www.instagram.com/djtrapella/"
+            >DJ Trapella</a
+          >, ja habitual de la festa més porca, acabarà de cremar els últims
+          compassos de la nit.
+        </p>
+      </div>
     </section>
   </main>
 
@@ -51,7 +73,7 @@ import Facebook from '../components/icon/Facebook.astro'
   }
   :root {
     --black: rgb(6 11 16);
-    --primary: rgb(245 239 214);
+    --primary: #fbb2a7;
   }
   html {
     font-family: system-ui, sans-serif;
@@ -101,7 +123,7 @@ import Facebook from '../components/icon/Facebook.astro'
   }
 
   #img-cartell {
-    aspect-ratio: 1600 / 2263;
+    aspect-ratio: 1266 / 1478;
     margin: 30px 0 30px 0;
   }
 
