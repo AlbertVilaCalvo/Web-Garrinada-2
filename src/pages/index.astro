@@ -8,6 +8,15 @@ import Facebook from '../components/icon/Facebook.astro'
 <MainLayout
   title="Garrinada 2025 - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
 >
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href="/img/cartell-garrinada-2025-800.jpg"
+    imagesrcset="/img/cartell-garrinada-2025-800.jpg 800w, /img/cartell-garrinada-2025-1200.jpg 1200w, /img/cartell-garrinada-2025-1600.jpg 1600w"
+    imagesizes="(min-width: 900px) 800px, calc(100vw - 40px)"
+  />
+
   <main>
     <section>
       <h1>GARRINADA 2025</h1>
@@ -27,6 +36,7 @@ import Facebook from '../components/icon/Facebook.astro'
         sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
         alt="Cartell Garrinada 2025"
         id="img-cartell"
+        fetchpriority="high"
       />
     </section>
 
