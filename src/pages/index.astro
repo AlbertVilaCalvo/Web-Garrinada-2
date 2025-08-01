@@ -42,7 +42,7 @@ import Facebook from '../components/icon/Facebook.astro'
 
     <section class="section">
       <div class="container-max-width">
-        <h2 class="dia">DILLUNS 4</h2>
+        <h2 class="dia sticky-header">DILLUNS 4</h2>
         <h3 class="acte">3x3 BÀSQUET SOLIDARI</h3>
         <p class="hora">
           A partir de les 17 h al pavelló municipal Raül Paloma
@@ -136,7 +136,7 @@ import Facebook from '../components/icon/Facebook.astro'
 
     <section class="section">
       <div class="container-max-width">
-        <h2 class="dia">DIMARTS 5</h2>
+        <h2 class="dia sticky-header">DIMARTS 5</h2>
         <h3 class="acte">TARDA INFANTIL I POPULAR</h3>
         <p class="hora">17:30 h - 20 h</p>
         <p>
@@ -221,7 +221,7 @@ import Facebook from '../components/icon/Facebook.astro'
 
     <section class="section">
       <div class="container-max-width">
-        <h2 class="dia">DIMECRES 6</h2>
+        <h2 class="dia sticky-header">DIMECRES 6</h2>
         <h3 class="acte">CAIPIRINYADA POPULAR</h3>
         <p class="hora">17:30 h - 23 h</p>
         <p>
@@ -305,7 +305,7 @@ import Facebook from '../components/icon/Facebook.astro'
     <section class="section">
       <div class="container-max-width">
         <h2 class="dia">COM ARRIBAR</h2>
-        <p>
+        <p style="margin-top: 2rem">
           La Garrinada se celebra a l'<a
             href="https://www.google.com/maps/place/Escola+Argentona/@41.5503881,2.4055149,17.94z/data=!3m1!5s0x12a4b5b95c6990f9:0x1cbc6f4bad196099!4m14!1m7!3m6!1s0x12a4b5bbf81685ab:0xae5cfbc04cb2e412!2sRtda.+del+Pi+Gros!8m2!3d41.5510591!4d2.4066127!16s%2Fg%2F1tdjls3_!3m5!1s0x12a4b5b95cec114d:0x39707c5c6f4860f!8m2!3d41.5502433!4d2.4054737!16s%2Fg%2F12qh936l1?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
             ><strong>Escola Argentona</strong></a
@@ -336,7 +336,7 @@ import Facebook from '../components/icon/Facebook.astro'
             href="https://argentona.cat/ARXIUS/Festes_Cultura/2025/FM_Domingo_25/BUS_FESTA_MAJOR.pdf"
             >horaris en PDF</a
           > o <a href="https://argentona.cat/document.php?id=60676">en imatge</a
-          >
+          >.
         </p>
         <h3 class="acte">BUS NOCTURN HABITUAL (N80)</h3>
         <p>
@@ -409,7 +409,6 @@ import Facebook from '../components/icon/Facebook.astro'
   img {
     width: 100%;
     height: auto;
-    max-width: 800px;
   }
   h1 {
     font-size: 2rem;
@@ -431,12 +430,21 @@ import Facebook from '../components/icon/Facebook.astro'
   }
 
   .section {
-    margin-top: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
   }
   .container-max-width {
     margin: auto;
     max-width: 560px;
     padding: 0 1.2rem;
+  }
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--black);
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary);
   }
   .row {
     display: flex;
@@ -450,8 +458,7 @@ import Facebook from '../components/icon/Facebook.astro'
     margin: 30px 0 30px 0;
   }
   .dia {
-    margin-top: 4rem;
-    margin-bottom: 16px;
+    margin: 0;
   }
   .acte {
     margin-bottom: 0;
