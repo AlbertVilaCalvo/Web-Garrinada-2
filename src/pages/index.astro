@@ -44,13 +44,15 @@ import Facebook from '../components/icon/Facebook.astro'
       <div class="container-max-width">
         <h2 class="dia">DILLUNS 4</h2>
         <h3 class="acte">3x3 BÀSQUET SOLIDARI</h3>
-        <p><i>A partir de les 17 h al pavelló municipal Raül Paloma</i></p>
+        <p class="hora">
+          A partir de les 17 h al pavelló municipal Raül Paloma
+        </p>
         <p>
           S'organitzaran les categories en funció dels participants. S'informarà
           mitjançant les xarxes socials i e-mail. Cal inscripció prèvia.
         </p>
         <h3 class="acte">GARRIDUB</h3>
-        <p><i>A partir de les 18 h</i></p>
+        <p class="hora">A partir de les 18 h</p>
         <p>
           Sonoritzat per <strong>Sagittarius Hi Fi</strong> amb <strong
             >Chalart58 & The Soul Adventures</strong
@@ -58,7 +60,7 @@ import Facebook from '../components/icon/Facebook.astro'
           de foodtrucks durant tota la nit.
         </p>
         <h3 class="acte">CONCERTS</h3>
-        <p><i>23:10 - 5 h</i></p>
+        <p class="hora">23:10 - 5 h</p>
         <p>
           Després dels focs, a l’Escola Argentona, amb Adala, Las Ninyas del
           Corro, O.B.F + Sr. Wilson i Nàtura
@@ -136,7 +138,7 @@ import Facebook from '../components/icon/Facebook.astro'
       <div class="container-max-width">
         <h2 class="dia">DIMARTS 5</h2>
         <h3 class="acte">TARDA INFANTIL I POPULAR</h3>
-        <p><i>17:30 h - 20 h</i></p>
+        <p class="hora">17:30 h - 20 h</p>
         <p>
           Un any més, i per celebrar els 25 anys de La Garrinada, tornem als
           orígens amb una nova tarda popular i els jocs més mítics: des del
@@ -148,7 +150,7 @@ import Facebook from '../components/icon/Facebook.astro'
         </p>
         <p>*Concert organitzat per l’Ajuntament d’Argentona</p>
         <h3 class="acte">SOPAR POPULAR</h3>
-        <p><i>20 h - 23 h</i></p>
+        <p class="hora">20 h - 23 h</p>
         <img
           src="/img/2025-garrinada/porc-sopar.jpg"
           alt="Sopar popular de porc a l'ast"
@@ -167,7 +169,7 @@ import Facebook from '../components/icon/Facebook.astro'
           vegetariana als foodtrucks.
         </p>
         <h3 class="acte">CONCERTS</h3>
-        <p><i>23 h - 5 h</i></p>
+        <p class="hora">23 h - 5 h</p>
         <p>
           Després del sopar popular, a l’Escola Argentona, amb l’Orquestra de la
           Gran Porca (especial 25 anys), Al·lèrgiques al pol·len, Henry Méndez i
@@ -221,7 +223,7 @@ import Facebook from '../components/icon/Facebook.astro'
       <div class="container-max-width">
         <h2 class="dia">DIMECRES 6</h2>
         <h3 class="acte">CAIPIRINYADA POPULAR</h3>
-        <p><i>17:30 h - 23 h</i></p>
+        <p class="hora">17:30 h - 23 h</p>
         <p>
           Aquest any tampoc no pot faltar una de les tardes més esperades pel
           públic garrí: la gran Caipirinyada Popular!
@@ -248,7 +250,7 @@ import Facebook from '../components/icon/Facebook.astro'
           les 17.30 h.
         </p>
         <h3 class="acte">CONCERTS</h3>
-        <p><i>23 h - 5:30 h</i></p>
+        <p class="hora">23 h - 5:30 h</p>
         <p>
           Després de la Caipirinyada Popular, a l’Escola Argentona, amb Remei de
           Ca la Fresca, Svetlana, María Escarmiento i DJ Trapella
@@ -453,6 +455,10 @@ import Facebook from '../components/icon/Facebook.astro'
   }
   .acte {
     margin-bottom: 0;
+  }
+  .hora {
+    font-style: italic;
+    margin-top: 0.75rem;
   }
 
   footer {
