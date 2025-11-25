@@ -1,0 +1,165 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Instagram from '../components/icon/Instagram.astro'
+import Twitter from '../components/icon/Twitter.astro'
+import Facebook from '../components/icon/Facebook.astro'
+---
+
+<MainLayout title="Festa 25 anys Garrinada - Argentona">
+  <main>
+    <section>
+      <h1>FESTA 25 ANYS</h1>
+      <h2>Repicabarres</h2>
+      <h2>Presentació cartell Garrinada 2025</h2>
+      <div class="row" style="padding-top: 3px">
+        <p style="margin-top: 3px">Casal de Joves, Argentona</p>
+        <p style="margin-top: 3px">Dissabte 24 de maig</p>
+        <p style="margin-top: 3px">Entrada gratuïta</p>
+      </div>
+      <img
+        src="/img/cartell-festa-25-anys.png"
+        alt="Cartell festa 25 anys Garrinada"
+        id="img-cartell"
+      />
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <p>
+          La Garrinada celebra un quart de segle! Aquest agost farem la
+          vint-i-cinquena edició de la festa més porca, i això es mereix una
+          celebració com cal, al costat de tots els que ens heu acompanyat
+          aquests anys.
+        </p>
+        <p>
+          Repicabarres amb <a href="https://www.instagram.com/tirantloband/"
+            >Tirant Lo Band</a
+          >. Sortida a les 17:00 de la plaça de l'Església.
+        </p>
+        <p>
+          Presentació del cartell Garrinada 2025, a partir de les 20:00 al <a
+            href="https://www.instagram.com/ksal_argentona/">Casal de Joves</a
+          >.
+        </p>
+        <p>
+          Tot seguit, festa de 25 anys amb <a
+            href="https://www.instagram.com/aksismusic/">DJ AKSIS</a
+          >!
+        </p>
+        <p>
+          Venda de tiquets a <a
+            href="https://www.instagram.com/arenasllibreriapapereria/"
+            >Ca l'Arenas</a
+          >.
+        </p>
+        <p>Llarga vida a La Garrinada!</p>
+        <p>
+          Activitat organitzada amb el suport de la <a
+            href="https://www.instagram.com/dibacat/">Diputació de Barcelona</a
+          > i l'<a href="https://www.instagram.com/ajargentona/"
+            >Ajuntament d'Argentona</a
+          >.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <Twitter />
+      <Facebook />
+      <Instagram />
+    </div>
+  </footer>
+</MainLayout>
+
+<style is:global>
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  :root {
+    --black: rgb(6 11 16);
+    --primary: #ffb9ad;
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: var(--black);
+    color: var(--primary);
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  a {
+    color: var(--primary);
+  }
+
+  .section {
+    margin-top: 1rem;
+  }
+  .container-max-width {
+    margin: auto;
+    max-width: 560px;
+    padding: 0 1.2rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 27px;
+  }
+
+  #img-cartell {
+    aspect-ratio: 1080 / 1350;
+    margin: 30px 0 30px 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  footer .social-icon {
+    margin: 0 20px;
+    transition: transform 0.1s ease-in-out;
+    color: var(--primary);
+  }
+  footer .social-icon:hover {
+    transform: scale(1.25);
+  }
+  .social-icon {
+    width: 34px;
+  }
+  @media all and (min-width: 480px) {
+    .social-icon {
+      width: 38px;
+    }
+  }
+</style>
