@@ -15,4 +15,7 @@ export default defineConfig({
     // Note that this is the default value in version 3, see https://docs.astro.build/en/guides/upgrade-to/v3/#changed-default-inlinestylesheets
     inlineStylesheets: 'auto',
   },
+  server: {
+    port: 3000,
+  },
 })
