@@ -1,0 +1,496 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Instagram from '../components/icon/Instagram.astro'
+import Twitter from '../components/icon/Twitter.astro'
+import Facebook from '../components/icon/Facebook.astro'
+---
+
+<MainLayout
+  title="Garrinada 2025 - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
+>
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href="/img/cartell-garrinada-2025-800.jpg"
+    imagesrcset="/img/cartell-garrinada-2025-800.jpg 800w, /img/cartell-garrinada-2025-1200.jpg 1200w, /img/cartell-garrinada-2025-1600.jpg 1600w"
+    imagesizes="(min-width: 900px) 800px, calc(100vw - 40px)"
+    fetchpriority="high"
+  />
+
+  <main>
+    <section>
+      <h1>GARRINADA 2025</h1>
+      <h2>Festa Major de Sant Domènec</h2>
+      <div class="row" style="padding-top: 3px">
+        <p style="margin-top: 3px">Argentona</p>
+        <p style="margin-top: 3px">4, 5 i 6 d'agost</p>
+        <p style="margin-top: 3px">Entrada gratuïta</p>
+      </div>
+      <img
+        src="/img/cartell-garrinada-2025-800.jpg"
+        srcset="
+          /img/cartell-garrinada-2025-800.jpg 800w,
+          /img/cartell-garrinada-2025-1200.jpg 1200w,
+          /img/cartell-garrinada-2025-1600.jpg 1600w
+        "
+        sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
+        alt="Cartell Garrinada 2025"
+        id="img-cartell"
+        fetchpriority="high"
+      />
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <h2 class="dia sticky-header">DILLUNS 4</h2>
+        <h3 class="acte">3x3 BÀSQUET SOLIDARI</h3>
+        <p class="hora">
+          A partir de les 17 h al pavelló municipal Raül Paloma
+        </p>
+        <p>
+          S'organitzaran les categories en funció dels participants. S'informarà
+          mitjançant les xarxes socials i e-mail. Cal inscripció prèvia.
+        </p>
+        <h3 class="acte">GARRIDUB</h3>
+        <p class="hora">A partir de les 18 h</p>
+        <p>
+          Sonoritzat per <strong>Sagittarius Hi Fi</strong> amb <strong
+            >Chalart58 & The Soul Adventures</strong
+          > i <strong>Senyor Oca</strong> a l’espai La Porqueta. Hi haurà servei
+          de foodtrucks durant tota la nit.
+        </p>
+        <h3 class="acte">CONCERTS</h3>
+        <p class="hora">23:10 - 5 h</p>
+        <p>
+          Després dels focs, a l’Escola Argentona, amb Adala, Las Ninyas del
+          Corro, O.B.F + Sr. Wilson i Nàtura
+        </p>
+        <figure style="position: relative; display: inline-block; margin: 0;">
+          <img
+            src="/img/2025-garrinada/adala.jpg"
+            alt="Adala"
+            style="display: block; aspect-ratio: 1620 / 1080;"
+            loading="lazy"
+          />
+          <figcaption
+            style="
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 0.2em 0.3em;
+            font-size: 10px;
+          "
+          >
+            Photo by
+            <a href="https://picto.anartist.org/blankfosk">@blankfosk</a> from
+            <a href="https://picto.anartist.org/p/blankfosk/678937294917103364"
+              >picto.anartist.org</a
+            > licensed under
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+              CC BY-NC-SA 4.0
+            </a>
+          </figcaption>
+        </figure>
+        <p>
+          La Garrinada fa 25 anys i ho celebrarem com cal! I qui també està
+          d’aniversari (en aquest cas, deu anys dalt dels escenaris) és
+          <strong>Adala</strong>, que encetarà la primera nit de concerts amb la
+          seva música reggae del sub-conscient.
+        </p>
+        <img
+          src="/img/2025-garrinada/ninyas-del-corro.jpg"
+          alt="Las Ninyas del Corro"
+          style="aspect-ratio: 1600 / 2122;"
+          loading="lazy"
+        />
+        <p>
+          El rap compromès de <strong>Las Ninyas del Corro</strong> tornarà a fer
+          vibrar l’escenari argentoní.
+        </p>
+        <img
+          src="/img/2025-garrinada/obf.jpg"
+          alt="O.B.F"
+          style="aspect-ratio: 1000 / 1250;"
+          loading="lazy"
+        />
+        <p>
+          Tot seguit, un dels plats forts de la vint-i-cinquena edició de La
+          Garrinada: vinguts des de França, el Sound System d’<strong
+            >O.B.F</strong
+          >
+          acompanyats de <strong>Sr. Wilson</strong>.
+        </p>
+        <img
+          src="/img/2023-garrinada/natura-square-opt.jpg"
+          alt="Nàtura"
+          style="aspect-ratio: 1 / 1;"
+          loading="lazy"
+        />
+        <p>
+          La primera nit la tancarà <strong>Nàtura</strong>, una imprescindible
+          de la nit catalana.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <h2 class="dia sticky-header">DIMARTS 5</h2>
+        <h3 class="acte">TARDA INFANTIL I POPULAR</h3>
+        <p class="hora">17:30 h - 20 h</p>
+        <p>
+          Un any més, i per celebrar els 25 anys de La Garrinada, tornem als
+          orígens amb una nova tarda popular i els jocs més mítics: des del
+          concurs de crits fins a l’aixecada de caipis.
+        </p><p>
+          A les 18 h, concert amb
+          <strong>Bon Vent</strong>*, el projecte de música familiar d’Ebri
+          Knight, un homenatge a la música de Xesco Boix.
+        </p>
+        <p>*Concert organitzat per l’Ajuntament d’Argentona</p>
+        <h3 class="acte">SOPAR POPULAR</h3>
+        <p class="hora">20 h - 23 h</p>
+        <img
+          src="/img/2025-garrinada/porc-sopar.jpg"
+          alt="Sopar popular de porc a l'ast"
+          style="aspect-ratio: 1000 / 1333;"
+          loading="lazy"
+        />
+        <p>
+          El porc a l’ast de La Garrinada és ja una tradició i un plat
+          excepcional que només es pot degustar una vegada l’any. El sopar
+          inclou porc a l’ast, patates al caliu, amanida, aigua, vi i fruita.
+        </p><p>
+          Els tiquets es poden adquirir anticipadament a Ca l’Arenas o a la
+          barra de La Garrinada. Atenció, els tiquets s’acaben d’hora!
+        </p><p>
+          Es recomana portar els plats i els coberts de casa. Hi ha opció
+          vegetariana als foodtrucks.
+        </p>
+        <h3 class="acte">CONCERTS</h3>
+        <p class="hora">23 h - 5 h</p>
+        <p>
+          Després del sopar popular, a l’Escola Argentona, amb l’Orquestra de la
+          Gran Porca (especial 25 anys), Al·lèrgiques al pol·len, Henry Méndez i
+          DJ Aksis
+        </p>
+        <p>
+          Què seria d’un aniversari de La Garrinada sense l’orquestra més
+          argentonina? Torna l’<strong>Orquestra de la Gran Porca</strong>, però
+          en una edició especial pels 25 anys. Moltes sorpreses i
+          col·laboracions que haureu de descobrir el dia 5 d’agost, després del
+          sopar popular.
+        </p>
+        <img
+          src="/img/2025-garrinada/allergiques-al-pollen.jpg"
+          alt="Al·lèrgiques al pol·len"
+          style="aspect-ratio: 1200 / 804;"
+          loading="lazy"
+        />
+        <p>
+          Tot seguit, <strong>Al·lèrgiques al pol·len</strong> tornen a trepitjar
+          l’escenari de La Garrinada per presentar-nos el seu últim disc: “Al·larma”.
+          Elles tampoc hi podien faltar!
+        </p>
+        <img
+          src="/img/2025-garrinada/henry-mendez.jpg"
+          alt="Henry Méndez"
+          style="aspect-ratio: 1200 / 1800;"
+          loading="lazy"
+        />
+        <p>
+          I després, l’home de moda: <strong>Henry Méndez</strong>, autor de
+          hits com Rayos de sol, El tiburón o Mi reina arriba a Argentona per
+          cremar-ho tot.
+        </p>
+        <img
+          src="/img/2025-garrinada/aksis.jpg"
+          alt="DJ Aksis"
+          style="aspect-ratio: 1056 / 1600;"
+          loading="lazy"
+        />
+        <p>
+          Els últims compassos de la nit els ballarem amb <strong
+            >DJ Aksis</strong
+          >, el punxadiscos argentoní que s’ha convertit en un habitual de totes
+          les festes catalanes.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <h2 class="dia sticky-header">DIMECRES 6</h2>
+        <h3 class="acte">CAIPIRINYADA POPULAR</h3>
+        <p class="hora">17:30 h - 23 h</p>
+        <p>
+          Aquest any tampoc no pot faltar una de les tardes més esperades pel
+          públic garrí: la gran Caipirinyada Popular!
+        </p><p>
+          Gaudeix de la millor i més refrescant beguda argentonina i aconsegueix
+          la samarreta d’aquesta edició.
+        </p>
+        <img
+          src="/img/2023-garrinada/mitjanit-opt.jpg"
+          alt="Mitjanit"
+          style="aspect-ratio: 920 / 1057;"
+          loading="lazy"
+        />
+        <p>
+          Com ja és tradició, caipirinyada amenitzada amb <strong
+            >Mitjanit</strong
+          >, que versionarà les millors cançons de Festa Major i ompliran
+          l’escenari de La Garrinada d’energia i diversió.
+        </p><p>
+          Després, la patxanga més maresmenca amb <strong>DJ Badabronx</strong>,
+          que aquest estiu s’acomiada dels escenaris.
+        </p><p>
+          Hi haurà servei de foodtrucks durant tota la nit. Obertura de portes a
+          les 17.30 h.
+        </p>
+        <h3 class="acte">CONCERTS</h3>
+        <p class="hora">23 h - 5:30 h</p>
+        <p>
+          Després de la Caipirinyada Popular, a l’Escola Argentona, amb Remei de
+          Ca la Fresca, Svetlana, María Escarmiento i DJ Trapella
+        </p>
+        <img
+          src="/img/2025-garrinada/remei-ca-la-fresca.jpg"
+          alt="Remei de Ca la Fresca"
+          style="aspect-ratio: 1200 / 816;"
+          loading="lazy"
+        />
+        <p>
+          Els encarregats d’encetar l’última nit de festa seran <strong
+            >Remei de Ca la Fresca</strong
+          > amb el seu discurs esmolat, però poètic, i la seva música que desafia
+          tota frontera estilística. No sabem com definir-los, però no us els perdeu!
+        </p>
+        <img
+          src="/img/2025-garrinada/svetlana.jpg"
+          alt="Svetlana"
+          style="aspect-ratio: 1200 / 1800;"
+          loading="lazy"
+        />
+        <p>
+          <strong>Svetlana</strong>, el duet de moda de Barcelona, ens faran
+          ballar amb la seva autenticitat i les seves lletres gamberres i contra
+          la gentrificació.
+        </p>
+        <img
+          src="/img/2025-garrinada/maria-escarmiento.jpg"
+          alt="María Escarmiento"
+          style="aspect-ratio: 1200 / 1800;"
+          loading="lazy"
+        />
+        <p>
+          Després, <strong>María Escarmiento</strong> ho capgirarà tot amb un estil
+          únic i eclèctic, pop que transgredeix allò més mainstream.
+        </p>
+        <img
+          src="/img/2025-garrinada/trapella.jpg"
+          alt="DJ Trapella"
+          style="aspect-ratio: 1200 / 1800;"
+          loading="lazy"
+        />
+        <p>
+          I ella també hi havia de ser, un any més: <strong>DJ Trapella</strong>
+          ens ajudarà a acomiadar els 25 anys de La Garrinada com cal, amb els hits
+          d’avui i de sempre.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <h2 class="dia">COM ARRIBAR</h2>
+        <p style="margin-top: 2rem">
+          La Garrinada se celebra a l'<a
+            href="https://www.google.com/maps/place/Escola+Argentona/@41.5503881,2.4055149,17.94z/data=!3m1!5s0x12a4b5b95c6990f9:0x1cbc6f4bad196099!4m14!1m7!3m6!1s0x12a4b5bbf81685ab:0xae5cfbc04cb2e412!2sRtda.+del+Pi+Gros!8m2!3d41.5510591!4d2.4066127!16s%2Fg%2F1tdjls3_!3m5!1s0x12a4b5b95cec114d:0x39707c5c6f4860f!8m2!3d41.5502433!4d2.4054737!16s%2Fg%2F12qh936l1?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+            ><strong>Escola Argentona</strong></a
+          >, situada a l'Avinguda Països Catalans S/N.
+        </p>
+        <h3 class="acte">SERVEI ESPECIAL DE BUS NOCTURN</h3>
+        <p>
+          Durant les nits del 3 al 6 d'agost <a href="https://www.sagales.com/"
+            >Sagalés</a
+          > ofereix dues línies extraordinàries de bus nocturn, amb parada a la <a
+            href="https://www.google.com/maps/place/Rtda.+del+Pi+Gros/@41.5510601,2.405969,18z/data=!4m14!1m7!3m6!1s0x12a4b5bbf81685ab:0xae5cfbc04cb2e412!2sRtda.+del+Pi+Gros!8m2!3d41.5510591!4d2.4066127!16s%2Fg%2F1tdjls3_!3m5!1s0x12a4b5bbf81685ab:0xae5cfbc04cb2e412!8m2!3d41.5510591!4d2.4066127!16s%2Fg%2F1tdjls3_?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+            >rotonda del Pi Gros</a
+          > (rotonda grossa amb palmeres a l'entrada d'Argentona):
+        </p>
+        <ul>
+          <li>
+            Línia El Cros i Mataró (estació Rodalies, Tecnocampus i Plaça
+            Alcalde Serra i Xifra)
+          </li>
+          <li style="margin-bottom: 10px">
+            Línia urbanitzacions (Les Ginesteres, Can Cabot, Can Raimí, Can
+            Ribosa i Madà)
+          </li>
+        </ul>
+        <p>
+          Vegeu els
+          <a
+            href="https://argentona.cat/ARXIUS/Festes_Cultura/2025/FM_Domingo_25/BUS_FESTA_MAJOR.pdf"
+            >horaris en PDF</a
+          > o <a href="https://argentona.cat/document.php?id=60676">en imatge</a
+          >.
+        </p>
+        <h3 class="acte">BUS NOCTURN HABITUAL (N80)</h3>
+        <p>
+          Per tornar al Maresme sud i Barcelona de nit podeu utilitzar el <a
+            href="https://www.moventis.es/ca/linies-horaris/linia-autobus-n-80-barcelona-mataro-nocturna?date=04/08/2025"
+            >bus nocturn N80</a
+          > (vegeu els <a
+            href="https://www.moventis.es/sites/moventis/files/line/files/n80_tira_web_26012024_0.pdf"
+            >horaris en PDF</a
+          >).
+        </p>
+        <h3 class="acte">ALTRES OPCIONS DE TRANSPORT</h3>
+        <p>
+          Vegeu la resta de línies d'autobús i altres opcions de transport al <a
+            href="https://argentona.cat/transport"
+            >web de l'Ajuntament d'Argentona</a
+          > i al <a href="https://www.sagales.com/">web de Sagalés</a>.
+        </p>
+        <p>
+          Atenció: algunes parades de bus estan anul·lades durant la Festa
+          Major, vegeu el
+          <a href="https://argentona.cat/document.php?id=60676"
+            >web de l'Ajuntament d'Argentona</a
+          >. Recomanem anar a la <a
+            href="https://www.google.com/maps/place/Rtda.+del+Pi+Gros/@41.5510601,2.405969,18z/data=!4m14!1m7!3m6!1s0x12a4b5bbf81685ab:0xae5cfbc04cb2e412!2sRtda.+del+Pi+Gros!8m2!3d41.5510591!4d2.4066127!16s%2Fg%2F1tdjls3_!3m5!1s0x12a4b5bbf81685ab:0xae5cfbc04cb2e412!8m2!3d41.5510591!4d2.4066127!16s%2Fg%2F1tdjls3_?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+            >rotonda del Pi Gros</a
+          >.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <Twitter />
+      <Facebook />
+      <Instagram />
+    </div>
+  </footer>
+</MainLayout>
+
+<style is:global>
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  :root {
+    --black: rgb(6 11 16);
+    --primary: rgb(245 239 214);
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: var(--black);
+    color: var(--primary);
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 2.7rem;
+  }
+  a {
+    color: var(--primary);
+  }
+  ul {
+    text-align: left;
+  }
+
+  .section {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .container-max-width {
+    margin: auto;
+    max-width: 560px;
+    padding: 0 1.2rem;
+  }
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--black);
+    padding: 1rem;
+    border-bottom: 1px solid var(--primary);
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 27px;
+  }
+
+  #img-cartell {
+    aspect-ratio: 1600 / 2263;
+    margin: 30px 0 30px 0;
+  }
+  .dia {
+    margin: 0;
+  }
+  .acte {
+    margin-bottom: 0;
+  }
+  .hora {
+    font-style: italic;
+    margin-top: 0.75rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  footer .social-icon {
+    margin: 0 20px;
+    transition: transform 0.1s ease-in-out;
+    color: var(--primary);
+  }
+  footer .social-icon:hover {
+    transform: scale(1.25);
+  }
+  .social-icon {
+    width: 34px;
+  }
+  @media all and (min-width: 480px) {
+    .social-icon {
+      width: 38px;
+    }
+  }
+</style>
