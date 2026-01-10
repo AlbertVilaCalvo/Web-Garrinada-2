@@ -17,6 +17,7 @@
 - Garrinada 2024
 - Garrivern 2025
 - Garrinada 2025
+- Garrivern 2026
 
 ## Development
 
