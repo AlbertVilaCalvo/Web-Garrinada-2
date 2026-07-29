@@ -5,6 +5,13 @@
   publish = "dist"
 
 
+# Netlify otherwise serves .webmanifest files as application/octet-stream.
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
+
 # Redirects
 # https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 # https://docs.netlify.com/routing/redirects/redirect-options/
