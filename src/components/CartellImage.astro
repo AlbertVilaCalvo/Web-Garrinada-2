@@ -18,15 +18,27 @@ interface Props {
    * @see https://docs.astro.build/en/reference/modules/astro-assets/#priority
    */
   priority?: boolean
+  /** WebP quality used by Astro. Defaults to 90 for existing pages. */
+  quality?: number
+  /** Responsive source widths. Defaults to the historical page set. */
+  widths?: number[]
 }
 
-const { cartell, alt, id, priority = true } = Astro.props
+const {
+  cartell,
+  alt,
+  id,
+  priority = true,
+  quality = 90,
+  widths = [600, 800, 1200, 1600],
+} = Astro.props
 ---
 
 <!--
-  Shared top-of-page cartell image. Astro generates responsive WebP variants
-  from 600px to 1600px at quality 90. Priority defaults to true so the cartell
-  loads eagerly with high fetch priority while the other page images stay lazy.
+  Shared top-of-page cartell image. By default, Astro generates responsive WebP
+  variants from 600px to 1600px at quality 90; pages can tune those values for
+  their artwork. Priority defaults to true so the cartell loads eagerly with
+  high fetch priority while the other page images stay lazy.
 
   A preload link is intentionally unnecessary: this image is rendered near the
   start of the initial HTML, where the browser's preload scanner can discover
@@ -39,8 +51,8 @@ const { cartell, alt, id, priority = true } = Astro.props
   id={id}
   layout="constrained"
   width={800}
-  widths={[600, 800, 1200, 1600]}
+  widths={widths}
   sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
-  quality={90}
+  quality={quality}
   priority={priority}
 />

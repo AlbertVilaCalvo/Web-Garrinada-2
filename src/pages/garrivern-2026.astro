@@ -1,0 +1,170 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import Instagram from '../components/icon/Instagram.astro'
+import Facebook from '../components/icon/Facebook.astro'
+---
+
+<MainLayout
+  title="Garrivern 2026 - Argentona - 16 de gener - Festa Major de Sant Julià"
+>
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href="/img/cartell-garrivern-2026.webp"
+    fetchpriority="high"
+  />
+
+  <main>
+    <section>
+      <h1>GARRIVERN 2026</h1>
+      <h2>Festa Major de Sant Julià</h2>
+      <div class="row" style="padding-top: 3px">
+        <p style="margin-top: 3px">La Sala, Argentona</p>
+        <p style="margin-top: 3px">Divendres 16 de gener</p>
+        <p style="margin-top: 3px">Entrada gratuïta</p>
+      </div>
+      <img
+        src="/img/cartell-garrivern-2026.webp"
+        alt="Cartell Garrivern 2026"
+        id="img-cartell"
+        fetchpriority="high"
+      />
+    </section>
+
+    <section class="section">
+      <div class="container-max-width">
+        <p>
+          La nit arrencarà amb <a href="https://www.instagram.com/markboske/"
+            >Mark Boske</a
+          >, cantant i trompetista indie-rock del Pallars Jussà.
+        </p>
+        <p>
+          Tot seguit serà el torn del pop electrònic i eclèctic de <a
+            href="https://www.instagram.com/partiperes/">Partiperes</a
+          >.
+        </p>
+        <p>
+          Seguirem amb les versions en format 360 graus de <a
+            href="https://www.instagram.com/elspipes/">Els Pipes</a
+          >, que ens faran ballar a ritme de rumba, pop i reggaeton.
+        </p>
+        <p>
+          Per últim la <a href="https://www.instagram.com/djtrapella/"
+            >DJ Trapella</a
+          >, habitual de la festa més porca, acabarà de cremar els últims
+          compassos de la nit argentonina.
+        </p>
+        <p class="hora" style="margin-top: 55px">
+          Obertura de portes a les 22:30, fins a les 4:45.
+        </p>
+        <p class="hora">Aforament limitat.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <Facebook />
+      <Instagram />
+    </div>
+  </footer>
+</MainLayout>
+
+<style is:global>
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  :root {
+    --black: rgb(6 11 16);
+    --primary: rgb(182, 232, 254);
+  }
+  html {
+    font-family:
+      'Lucida Grande', 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial,
+      sans-serif;
+    background-color: var(--black);
+    color: var(--primary);
+  }
+  body {
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+  }
+  a {
+    color: var(--primary);
+  }
+
+  .section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .container-max-width {
+    margin: auto;
+    max-width: 560px;
+    padding: 0 1.2rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 27px;
+  }
+
+  #img-cartell {
+    aspect-ratio: 640 / 896;
+    margin: 30px 0 30px 0;
+    max-width: 600px;
+  }
+  .hora {
+    font-style: italic;
+    margin-top: 0.75rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  footer .social-icon {
+    margin: 0 20px;
+    transition: transform 0.1s ease-in-out;
+    color: var(--primary);
+  }
+  footer .social-icon:hover {
+    transform: scale(1.25);
+  }
+  .social-icon {
+    width: 34px;
+  }
+  @media all and (min-width: 480px) {
+    .social-icon {
+      width: 38px;
+    }
+  }
+</style>
