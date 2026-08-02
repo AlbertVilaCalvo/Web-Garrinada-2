@@ -1,4 +1,6 @@
 ---
+import cartell from '../assets/cartells/cartell-garrinada-2025.jpg'
+import CartellImage from '../components/CartellImage.astro'
 import MainLayout from '../layouts/MainLayout.astro'
 import Instagram from '../components/icon/Instagram.astro'
 import Twitter from '../components/icon/Twitter.astro'
@@ -8,16 +10,6 @@ import Facebook from '../components/icon/Facebook.astro'
 <MainLayout
   title="Garrinada 2025 - Argentona - 4, 5 i 6 d'agost - Festa Major de Sant Domènec"
 >
-  <link
-    slot="head"
-    rel="preload"
-    as="image"
-    href="/img/cartell-garrinada-2025-800.jpg"
-    imagesrcset="/img/cartell-garrinada-2025-800.jpg 800w, /img/cartell-garrinada-2025-1200.jpg 1200w, /img/cartell-garrinada-2025-1600.jpg 1600w"
-    imagesizes="(min-width: 900px) 800px, calc(100vw - 40px)"
-    fetchpriority="high"
-  />
-
   <main>
     <section>
       <h1>GARRINADA 2025</h1>
@@ -27,17 +19,10 @@ import Facebook from '../components/icon/Facebook.astro'
         <p style="margin-top: 3px">4, 5 i 6 d'agost</p>
         <p style="margin-top: 3px">Entrada gratuïta</p>
       </div>
-      <img
-        src="/img/cartell-garrinada-2025-800.jpg"
-        srcset="
-          /img/cartell-garrinada-2025-800.jpg 800w,
-          /img/cartell-garrinada-2025-1200.jpg 1200w,
-          /img/cartell-garrinada-2025-1600.jpg 1600w
-        "
-        sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
+      <CartellImage
+        cartell={cartell}
         alt="Cartell Garrinada 2025"
         id="img-cartell"
-        fetchpriority="high"
       />
     </section>
 
@@ -83,19 +68,20 @@ import Facebook from '../components/icon/Facebook.astro'
             font-size: 10px;
           "
           >
-            Photo by
+            Photo by{' '}
             <a href="https://picto.anartist.org/blankfosk">@blankfosk</a> from
-            <a href="https://picto.anartist.org/p/blankfosk/678937294917103364"
+            {' '}<a
+              href="https://picto.anartist.org/p/blankfosk/678937294917103364"
               >picto.anartist.org</a
             > licensed under
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            {' '}<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
               CC BY-NC-SA 4.0
             </a>
           </figcaption>
         </figure>
         <p>
           La Garrinada fa 25 anys i ho celebrarem com cal! I qui també està
-          d’aniversari (en aquest cas, deu anys dalt dels escenaris) és
+          d’aniversari (en aquest cas, deu anys dalt dels escenaris) és{' '}
           <strong>Adala</strong>, que encetarà la primera nit de concerts amb la
           seva música reggae del sub-conscient.
         </p>
@@ -119,7 +105,7 @@ import Facebook from '../components/icon/Facebook.astro'
           Tot seguit, un dels plats forts de la vint-i-cinquena edició de La
           Garrinada: vinguts des de França, el Sound System d’<strong
             >O.B.F</strong
-          >
+          >{' '}
           acompanyats de <strong>Sr. Wilson</strong>.
         </p>
         <img
@@ -145,7 +131,7 @@ import Facebook from '../components/icon/Facebook.astro'
           orígens amb una nova tarda popular i els jocs més mítics: des del
           concurs de crits fins a l’aixecada de caipis.
         </p><p>
-          A les 18 h, concert amb
+          A les 18 h, concert amb{' '}
           <strong>Bon Vent</strong>*, el projecte de música familiar d’Ebri
           Knight, un homenatge a la música de Xesco Boix.
         </p>
@@ -296,7 +282,8 @@ import Facebook from '../components/icon/Facebook.astro'
           loading="lazy"
         />
         <p>
-          I ella també hi havia de ser, un any més: <strong>DJ Trapella</strong>
+          I ella també hi havia de ser, un any més: <strong>DJ Trapella</strong
+          >{' '}
           ens ajudarà a acomiadar els 25 anys de La Garrinada com cal, amb els hits
           d’avui i de sempre.
         </p>
@@ -332,7 +319,7 @@ import Facebook from '../components/icon/Facebook.astro'
           </li>
         </ul>
         <p>
-          Vegeu els
+          Vegeu els{' '}
           <a
             href="https://argentona.cat/ARXIUS/Festes_Cultura/2025/FM_Domingo_25/BUS_FESTA_MAJOR.pdf"
             >horaris en PDF</a
@@ -358,7 +345,7 @@ import Facebook from '../components/icon/Facebook.astro'
         </p>
         <p>
           Atenció: algunes parades de bus estan anul·lades durant la Festa
-          Major, vegeu el
+          Major, vegeu el{' '}
           <a href="https://argentona.cat/document.php?id=60676"
             >web de l'Ajuntament d'Argentona</a
           >. Recomanem anar a la <a

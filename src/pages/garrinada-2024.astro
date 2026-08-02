@@ -1,4 +1,6 @@
 ---
+import cartell from '../assets/cartells/cartell-garrinada-2024.jpg'
+import CartellImage from '../components/CartellImage.astro'
 import MainLayout from '../layouts/MainLayout.astro'
 import Instagram from '../components/icon/Instagram.astro'
 import Twitter from '../components/icon/Twitter.astro'
@@ -60,14 +62,8 @@ import Facebook from '../components/icon/Facebook.astro'
         <p style="margin-top: 3px">4, 5 i 6 d'agost</p>
         <p style="margin-top: 3px">Entrada gratuïta</p>
       </div>
-      <img
-        src="/img/cartell-garrinada-2024-800.jpg"
-        srcset="
-          /img/cartell-garrinada-2024-800.jpg 800w,
-          /img/cartell-garrinada-2024-1200.jpg 1200w,
-          /img/cartell-garrinada-2024-1600.jpg 1600w
-        "
-        sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
+      <CartellImage
+        cartell={cartell}
         alt="Cartell Garrinada 2024"
         id="img-cartell"
       />
@@ -252,7 +248,7 @@ import Facebook from '../components/icon/Facebook.astro'
             <p>
               Tot seguit, els prolífics, virtuosos i desenfadats de <strong
                 >La Ludwig Band</strong
-              >
+              >{' '}
               també s’estrenen a la festa més porca amb el seu “Gràcies per venir”,
               que està revolucionant el panorama català gràcies a les seves lletres
               agudes i el seu esperit crític.
@@ -316,7 +312,7 @@ import Facebook from '../components/icon/Facebook.astro'
           loading="lazy"
         />
         <p>
-          Com ja comença a ser tradició, caipirinyada amenitzada amb
+          Com ja comença a ser tradició, caipirinyada amenitzada amb{' '}
           <strong>La Mitjanit</strong>, que versionarà les millors cançons de
           Festa Major i ompliran l’escenari de La Garrinada d’energia i
           diversió. Després, la patxanga més maresmenca amb <strong
@@ -346,9 +342,9 @@ import Facebook from '../components/icon/Facebook.astro'
           />
           <div>
             <p>
-              L’urban maresmenc més prometedor aterra a Argentona: <strong
+              L’urban maresmenc més prometedor aterra a Argentona:{' '}<strong
                 >enMatu</strong
-              >,
+              >,{' '}
               <strong>dani6ix</strong> i <strong>IZZKID</strong> formen part d’un
               nou col·lectiu que puja amb molta força. A La Garrinada podrem gaudir
               d’un showcase dels tres artistes i de les col·laboracions que tenen
@@ -371,7 +367,7 @@ import Facebook from '../components/icon/Facebook.astro'
             </p>
             <p>
               Els encarregats de tancar la vint-i-quatrena edició de La
-              Garrinada seran
+              Garrinada seran{' '}
               <strong>Marmalade is Served</strong>, dos músics a mig camí entre
               Argentona i Mataró que ens han promès que “la liaran fort”.
             </p>

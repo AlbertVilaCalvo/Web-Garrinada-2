@@ -1,4 +1,6 @@
 ---
+import cartell from '../assets/cartells/cartell-garrinada-2023.jpg'
+import CartellImage from '../components/CartellImage.astro'
 import MainLayout from '../layouts/MainLayout.astro'
 import Twitter from '../components/icon/Twitter.astro'
 import Facebook from '../components/icon/Facebook.astro'
@@ -15,13 +17,8 @@ import Instagram from '../components/icon/Instagram.astro'
       <p>4, 5 i 6 d'agost</p>
       <p>Escola Argentona (Argentona)</p>
       <p>Entrada gratuïta</p>
-      <img
-        src="/img/cartell-garrinada-2023-800.jpg"
-        srcset="
-          /img/cartell-garrinada-2023-800.jpg 800w,
-          /img/cartell-garrinada-2023-1200.jpg 1200w,
-          /img/cartell-garrinada-2023-1600.jpg 1600w
-        "
+      <CartellImage
+        cartell={cartell}
         alt="Cartell Garrinada 2023"
         id="img-cartell"
       />
@@ -39,7 +36,7 @@ import Instagram from '../components/icon/Instagram.astro'
               Ubuntu Experiences, dedicada a l'organització de projectes
               solidaris relacionats amb l'esport a l'Àfrica. S'organitzaran les
               categories en funció dels participants (s'informarà mitjançant
-              xarxes socials i correu electrònic). Cal inscripció prèvia a
+              xarxes socials i correu electrònic). Cal inscripció prèvia a{' '}
               <a
                 href="mailto:ubuntuexperiences2018@gmail.com"
                 style="color: var(--black)">ubuntuexperiences2018@gmail.com</a
@@ -284,22 +281,22 @@ import Instagram from '../components/icon/Instagram.astro'
           Hi ha servei de <strong>bus nocturn</strong> les nits del 3, 4, 5 i 6, amb
           parada a la rotonda del Pi Gros. Per saber-ne més, descarregueu els horaris
           amb tots els detalls:
-          <ul>
-            <li>
-              <a
-                href="https://argentona.cat/ARXIUS/Festes_Cultura/2023/FME/Horari_BUS_nocturn_Festa_Major_Argentona_Cros_Mataro_DEFINITIU.pdf"
-                class="bus-link"
-                >Línia al Cros i Mataró
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://argentona.cat/ARXIUS/Festes_Cultura/2023/FME/Horaris_BUS_nocturn_Festa_Major_Argentona_Urbanitzacions_DEFINITIU.pdf"
-                class="bus-link">Línia a les urbanitzacions</a
-              >
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            <a
+              href="https://argentona.cat/ARXIUS/Festes_Cultura/2023/FME/Horari_BUS_nocturn_Festa_Major_Argentona_Cros_Mataro_DEFINITIU.pdf"
+              class="bus-link"
+              >Línia al Cros i Mataró
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://argentona.cat/ARXIUS/Festes_Cultura/2023/FME/Horaris_BUS_nocturn_Festa_Major_Argentona_Urbanitzacions_DEFINITIU.pdf"
+              class="bus-link">Línia a les urbanitzacions</a
+            >
+          </li>
+        </ul>
       </div>
     </section>
   </main>

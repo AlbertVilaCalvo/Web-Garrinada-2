@@ -1,0 +1,46 @@
+---
+import type { ImageMetadata } from 'astro'
+import { Image } from 'astro:assets'
+
+interface Props {
+  /** Imported source image that Astro transforms into responsive WebP variants. */
+  cartell: ImageMetadata
+  /** Accessible text describing the cartell's content. */
+  alt: string
+  /** HTML id used by the page to apply CSS styles. */
+  id: string
+  /**
+   * Whether to prioritize the cartell as an above-the-fold image. Defaults to
+   * `true`, which makes Astro output `loading="eager"`, `decoding="sync"`, and
+   * `fetchpriority="high"`. Set it to `false` when the cartell is not visible
+   * in the initial viewport.
+   *
+   * @see https://docs.astro.build/en/reference/modules/astro-assets/#priority
+   */
+  priority?: boolean
+}
+
+const { cartell, alt, id, priority = true } = Astro.props
+---
+
+<!--
+  Shared top-of-page cartell image. Astro generates responsive WebP variants
+  from 600px to 1600px at quality 90. Priority defaults to true so the cartell
+  loads eagerly with high fetch priority while the other page images stay lazy.
+
+  A preload link is intentionally unnecessary: this image is rendered near the
+  start of the initial HTML, where the browser's preload scanner can discover
+  its srcset immediately. Reconsider a responsive preload only if a future
+  layout makes the cartell late-discovered through CSS or JavaScript.
+-->
+<Image
+  src={cartell}
+  alt={alt}
+  id={id}
+  layout="constrained"
+  width={800}
+  widths={[600, 800, 1200, 1600]}
+  sizes="(min-width: 900px) 800px, calc(100vw - 40px)"
+  quality={90}
+  priority={priority}
+/>
