@@ -24,6 +24,17 @@ interface Props {
   widths?: number[]
 }
 
+/**
+ * Shared top-of-page cartell image. By default, Astro generates responsive WebP
+ * variants from 600px to 1600px at quality 90; pages can tune those values for
+ * their artwork. Priority defaults to true so the cartell loads eagerly with
+ * high fetch priority while the other page images stay lazy.
+ *
+ * A preload link is intentionally unnecessary: this image is rendered near the
+ * start of the initial HTML, where the browser's preload scanner can discover
+ * its srcset immediately. Reconsider a responsive preload only if a future
+ * layout makes the cartell late-discovered through CSS or JavaScript.
+ */
 const {
   cartell,
   alt,
@@ -34,17 +45,6 @@ const {
 } = Astro.props
 ---
 
-<!--
-  Shared top-of-page cartell image. By default, Astro generates responsive WebP
-  variants from 600px to 1600px at quality 90; pages can tune those values for
-  their artwork. Priority defaults to true so the cartell loads eagerly with
-  high fetch priority while the other page images stay lazy.
-
-  A preload link is intentionally unnecessary: this image is rendered near the
-  start of the initial HTML, where the browser's preload scanner can discover
-  its srcset immediately. Reconsider a responsive preload only if a future
-  layout makes the cartell late-discovered through CSS or JavaScript.
--->
 <Image
   src={cartell}
   alt={alt}
